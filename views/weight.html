@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Page title / Título de la página -->
+    <title>Weight Converter</title>
+    <!-- Link to external CSS stylesheet / Enlace a hoja de estilos CSS externa -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Main heading / Encabezado principal -->
+    <h1>Weight Converter</h1>
+    
+    <!-- Conversion form / Formulario de conversión -->
+    <form id="conversionForm" method="POST">
+        <!-- Hidden field to identify conversion type / Campo oculto para identificar el tipo de conversión -->
+        <input type="hidden" name="type" value="weight">
+        
+        <!-- Number input field / Campo de entrada numérica -->
+        <label for="number">Enter a number: </label>
+        <input id="number" type="number" name="value" step="any" value="{{value}}" required>
+        
+        <!-- Source unit selection - weight specific units / Selección de unidad de origen - unidades específicas de peso -->
+        <label for="from">from:</label>
+        <select id="from" name="from">
+            <option value="kilogram">Kilogram</option>
+            <option value="gram">Gram</option>
+            <option value="milligram">Milligram</option>
+            <option value="ounce">Ounce</option>            
+            <option value="pound">Pound</option>
+        </select>
+        
+        <!-- Target unit selection / Selección de unidad de destino -->
+        <label for="to">to:</label>
+        <select id="to" name="to">
+            <option value="kilogram">Kilogram</option>
+            <option value="gram">Gram</option>
+            <option value="milligram">Milligram</option>
+            <option value="ounce">Ounce</option>            
+            <option value="pound">Pound</option>
+        </select>
+        
+        <!-- Submit button / Botón de envío -->
+        <button type="submit">Convert</button>
+    </form>
+    
+    <!-- Results container with dynamic visibility / Contenedor de resultados con visibilidad dinámica -->
+    <div id="result" {{resultStyle}}>
+        <!-- Result message with placeholders / Mensaje de resultado con placeholders -->
+        <p>Result: {{value}} {{from}} to {{to}} = {{result}}</p>
+    </div>
+
+    <!-- Back to home button / Botón para volver al inicio -->
+    <form action="/" method="GET">
+        <button type="submit">Back to Home</button>
+    </form>
+</body>
+</html>

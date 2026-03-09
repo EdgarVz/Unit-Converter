@@ -1,0 +1,54 @@
+/* Global styles / Estilos globales */
+body {
+    font-family: Arial, sans-serif;        /* Clean, readable font / Fuente limpia y legible */
+    max-width: 600px;                       /* Limit width for better readability / Limitar ancho para mejor legibilidad */
+    margin: 50px auto;                       /* Center vertically and horizontally / Centrar vertical y horizontalmente */
+    padding: 20px;                           /* Inner spacing / Espaciado interno */
+    background-color: #f5f5f5;               /* Light gray background / Fondo gris claro */
+}
+
+/* Main title / Título principal */
+h1 {
+    color: #333;                             /* Dark gray text / Texto gris oscuro */
+    text-align: center;                      /* Center the title / Centrar el título */
+}
+
+/* Form container / Contenedor del formulario */
+form {
+    background: white;                        /* White background / Fondo blanco */
+    padding: 20px;                            /* Inner spacing / Espaciado interno */
+    border-radius: 8px;                       /* Rounded corners / Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);    /* Subtle shadow / Sombra sutil */
+}
+
+/* Form elements / Elementos del formulario */
+input, select, button {
+    margin: 10px 0;                           /* Vertical spacing / Espaciado vertical */
+    padding: 8px;                              /* Inner padding / Relleno interno */
+    border: 1px solid #ddd;                    /* Light gray border / Borde gris claro */
+    border-radius: 4px;                        /* Slightly rounded corners / Bordes ligeramente redondeados */
+    width: 100%;                               /* Full width / Ancho completo */
+}
+
+/* Submit button / Botón de envío */
+button {
+    background-color: #007bff;                 /* Blue background / Fondo azul */
+    color: white;                               /* White text / Texto blanco */
+    border: none;                               /* Remove border / Quitar borde */
+    cursor: pointer;                            /* Pointer cursor on hover / Cursor de mano al pasar */
+}
+
+/* Button hover effect / Efecto al pasar el ratón sobre el botón */
+button:hover {
+    background-color: #0056b3;                 /* Darker blue on hover / Azul más oscuro al pasar */
+}
+
+/* Results container / Contenedor de resultados */
+#result {
+    margin-top: 20px;                           /* Space above the result / Espacio superior */
+    padding: 15px;                               /* Inner spacing / Espaciado interno */
+    background-color: #e8f5e9;                   /* Light green background / Fondo verde claro */
+    border-radius: 4px;                          /* Rounded corners / Bordes redondeados */
+    text-align: center;                          /* Center the text / Centrar el texto */
+    font-weight: bold;                           /* Bold text for emphasis / Texto en negrita para énfasis */
+}

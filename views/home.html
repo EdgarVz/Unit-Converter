@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Page title / Título de la página -->
+    <title>Unit Converter</title>
+    <!-- Link to external CSS stylesheet / Enlace a hoja de estilos CSS externa -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Main heading / Encabezado principal -->
+    <h1>Unit Converter</h1>
+    
+    <!-- Welcome message / Mensaje de bienvenida -->
+    <p>Welcome to our unit converter,
+        where you can convert units of length, weight, and temperature.
+    </p>
+    <br>
+
+    <!-- Unit selection form / Formulario de selección de unidad -->
+    <form id="unitForm" method="POST" action="select">
+        <!-- Dropdown label / Etiqueta del menú desplegable -->
+        <label for="unitSelect">Select an option: </label>
+        
+        <!-- Dropdown for selecting conversion type / Menú desplegable para seleccionar tipo de conversión -->
+        <select id="unitSelect" name="option">
+            <option value="length">Length</option>
+            <option value="weight">Weight</option>
+            <option value="temperature">Temperature</option>
+        </select>
+        
+        <!-- Submit button / Botón de envío -->
+        <button type="submit">Convert</button>
+    </form>
+</body>
+</html>
